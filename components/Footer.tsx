@@ -50,7 +50,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-line px-6 py-4 text-center font-mono text-xs text-ink-muted">
-        © {new Date().getFullYear()} {SITE.name}. Todos los derechos reservados.
+        © {new Date().getFullYear()} {SITE.name}. | DWS | Todos los derechos reservados.
       </div>
     </footer>
   );
