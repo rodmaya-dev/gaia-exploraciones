@@ -6,11 +6,6 @@ export const metadata: Metadata = {
   description: `Conoce a ${SITE.contactName} y el enfoque de trabajo de ${SITE.name}.`,
 };
 
-// NOTA PARA GIBRÁN: los textos de esta página están escritos de forma
-// genérica a propósito, para no inventar datos que no tengo (formación
-// académica, años de experiencia, certificaciones, proyectos realizados).
-// Reemplaza los bloques marcados con TODO por tu información real.
-
 export default function NosotrosPage() {
   return (
     <section className="mx-auto max-w-content px-6 py-16 md:py-24">
@@ -19,20 +14,39 @@ export default function NosotrosPage() {
         {SITE.contactName}
       </h1>
       <p className="mt-4 max-w-2xl font-body text-lg text-ink-muted">
-        Ingeniero dedicado a la exploración geofísica del subsuelo aplicada a
-        proyectos de construcción, geotecnia, localización de infraestructura
-        enterrada y estudios especializados.
+        Ingeniero Geofísico egresado de la Universidad Nacional Autónoma de
+        México (UNAM), especializado en exploración petrolera. Fundador y
+        director de Gaia Exploraciones desde 2020, donde aplica más de dos
+        décadas de experiencia en control de calidad y exploración geofísica
+        a estudios de georadar (GPR) para proyectos de construcción,
+        geotecnia y localización de infraestructura enterrada.
       </p>
 
-      {/* TODO: reemplaza este párrafo con tu formación académica y trayectoria real. */}
-      <div className="mt-10 rounded-lg border border-dashed border-amber-soft/60 bg-surface p-6">
-        <p className="eyebrow text-amber-soft">Pendiente de completar</p>
-        <p className="mt-2 font-body text-sm text-ink-muted">
-          Agrega aquí tu formación académica, certificaciones, años de
-          experiencia y, si quieres, un par de proyectos representativos
-          (sin datos confidenciales). Edita{" "}
-          <code className="font-mono text-ink">app/nosotros/page.tsx</code>.
-        </p>
+      <div className="mt-10 rounded-lg border border-line bg-surface p-6">
+        <p className="eyebrow text-amber-soft">Trayectoria</p>
+        <ul className="mt-3 space-y-2 font-body text-sm text-ink-muted">
+          <li className="flex gap-2">
+            <span aria-hidden className="text-cyan">—</span>
+            Ingeniero Geofísico, UNAM (1996–2001), especialidad en
+            Exploración Petrolera.
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="text-cyan">—</span>
+            QC Analyst en Schlumberger WesternGeco, en proyectos de
+            exploración en Veracruz y Chiapas.
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="text-cyan">—</span>
+            Experiencia en supervisión topográfica y control de calidad para
+            proyectos de infraestructura energética (Fermaca, Sicim,
+            Compañía Mexicana de Exploraciones).
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="text-cyan">—</span>
+            Fundador y CEO de Gaia Exploraciones desde 2020, enfocado en
+            estudios de georadar (GPR).
+          </li>
+        </ul>
       </div>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
